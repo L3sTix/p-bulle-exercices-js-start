@@ -28,7 +28,7 @@
  */
 export function canExecuteFastAttack(knightIsAwake) {
   
-  return knightIsAwake != true;
+  return !knightIsAwake;
 }
 
 /**
@@ -73,7 +73,7 @@ export function canFreePrisoner(
   petDogIsPresent,
 ) {
   if (petDogIsPresent){
-    return !archerIsAwake 
+    return !archerIsAwake
   }
   return prisonerIsAwake && !knightIsAwake && !archerIsAwake;
 }
