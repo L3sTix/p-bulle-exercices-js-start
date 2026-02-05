@@ -61,5 +61,5 @@ export function backDoorResponse(line) {
  * @returns {string} the back door password
  */
 export function backDoorPassword(word) {
-  return word[0].toUpperCase() + word.slice(1).toLowerCase().slice() + ', please';
+  return frontDoorPassword(word) + ', please';
 }
